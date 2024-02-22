@@ -25,11 +25,12 @@ public class L3L1_Main {
         System.out.println(Arrays.toString(arr2));
 
         List<String> list = new ArrayList<>();
+        list.add("str0");
         list.add("str1");
-        list.add("str2");
         list.add("str2");
         list.add("str3");
         System.out.println("List: " + list);
+        System.out.println(list.get(0));
 
         Set<Integer> set = new HashSet<>();
         set.add(1);
