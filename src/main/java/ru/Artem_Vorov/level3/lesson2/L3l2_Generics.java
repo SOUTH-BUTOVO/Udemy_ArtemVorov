@@ -25,13 +25,13 @@ public class L3l2_Generics {
         L3l2_Example1<L3l2_User> example1 = new L3l2_Example1<>();
         System.out.println(example1.get());
         example1.set(new L3l2_User("Alex", 35));
-        System.out.println(example1.get());
+        System.out.println(example1.get()  + " Example1");
         System.out.println("-----------------");
 
         L3l2_Example2.simpleInit(new L3l2_User());
         L3l2_Example2<L3l2_User> example2 = L3l2_Example2.init(new L3l2_User());
         example2.set(new L3l2_User("Artem", 30));
-        System.out.println(example2.getInstance());
+        System.out.println(example2.getInstance() + " Example2");
         System.out.println("-----------------");
 
         List<L3l2_BaseObject> list5 = new ArrayList<>();

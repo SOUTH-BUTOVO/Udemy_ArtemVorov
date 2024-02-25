@@ -10,7 +10,7 @@ public class L3l2_Example2<T> {
     }
 
     public static <T> L3l2_Example2<T> init(T instantiator) {
-        return new L3l2_Example2();
+        return new L3l2_Example2<T>();
     }
 
     public void set(T obj) {
