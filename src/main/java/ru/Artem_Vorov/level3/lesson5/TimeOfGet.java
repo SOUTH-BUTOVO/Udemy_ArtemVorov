@@ -12,7 +12,7 @@ public class TimeOfGet {
     }
 
     private static List fill(List list) {
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 50000; i++) {
             list.add(new Object());
         }
         return list;
@@ -20,16 +20,16 @@ public class TimeOfGet {
 
     static long getTimeMsOfGet(List list) {
         Date startTime = new Date();
-        get100000(list);
+        getElement(list);
         Date endTime = new Date();
         long fin = endTime.getTime() - startTime.getTime();
         return fin;
     }
 
-    static void get100000(List list) {
+    static void getElement(List list) {
         if (list.isEmpty()) return;
         int x = list.size() / 2;
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < list.size(); i++) {
             list.get(x);
         }
     }
