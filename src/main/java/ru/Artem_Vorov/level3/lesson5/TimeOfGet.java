@@ -23,13 +23,14 @@ public class TimeOfGet {
         getElement(list);
         Date endTime = new Date();
         long fin = endTime.getTime() - startTime.getTime();
+        System.out.println(list.size());
         return fin;
     }
 
     static void getElement(List list) {
         if (list.isEmpty()) return;
         int x = list.size() / 2;
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < 50000; i++) {
             list.get(x);
         }
     }

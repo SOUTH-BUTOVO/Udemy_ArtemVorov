@@ -22,11 +22,13 @@ public class TimeOfInsert {
         Date startTime = new Date();
         insertElement(list);
         Date endTime = new Date();
+        System.out.println(list.size());
         return endTime.getTime() - startTime.getTime();
     }
 
     static void insertElement(List list) {
         for (int i = 0; i < 100000; i++) {
+            if (list.isEmpty()) return;
             list.add(0, new Object());
         }
     }
