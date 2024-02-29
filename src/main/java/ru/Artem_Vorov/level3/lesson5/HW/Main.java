@@ -1,9 +1,6 @@
 package ru.Artem_Vorov.level3.lesson5.HW;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException, IOException {
@@ -39,8 +36,7 @@ public class Main {
         лира
         лоза
         лоза */
-        ListRemoveDouble.fix(List.of("лира", "лоза", "роза", "стол", "кровать", "люстра"));
-        //ListRemoveDouble.fix();
+        //ListRemoveDouble.fix(List.of("лира", "лоза", "роза", "стол", "кровать", "люстра"));
         System.out.println("\n" + "----------");
 
 
@@ -55,6 +51,8 @@ public class Main {
         краб краб
         лось лось
         рак рак */
+        //ListDouble.doubleValues();
+        System.out.println("\n" + "----------");
 
         /* 6. Задача: Программа вводит с клавиатуры данные про котов и выводит их на экран.
         Создать класс Cat с параметрами name, age, weight, tail;
@@ -66,5 +64,18 @@ public class Main {
         Пример:
         Cat name is Barsik, age is 6, weight is 5, tail = 22
         Cat name is Murka, age is 8, weight is 7, tail = 20 */
+        //Cat.deposit();
+
+
+//        CatEx<Animal> cat = new CatEx<>();
+//        cat.set(new Animal("Barsik", 3, 1.23, "Red"));
+//        System.out.println(cat.get());
+
+        CatEx.simpleInit(new Animal("Barsik", 3, 1.23, "Red"));
+        System.out.println();
+        //CatEx<Animal> cat = new CatEx<>();
+        //CatEx.startCat();
+        //System.out.println(cat.get());
+        System.out.println("\n" + "----------");
     }
 }
