@@ -1,6 +1,6 @@
 package ru.Artem_Vorov.level3.lesson2;
 
-public class L3l2_Example1<T> {
+public class Example1<T> {
     private T instance;
 
     public T get() {

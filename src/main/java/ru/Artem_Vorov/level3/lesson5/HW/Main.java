@@ -67,15 +67,15 @@ public class Main {
         //Cat.deposit();
 
 
-//        CatEx<Animal> cat = new CatEx<>();
-//        cat.set(new Animal("Barsik", 3, 1.23, "Red"));
-//        System.out.println(cat.get());
+        CatEx<Animal> cat = new CatEx<>();
+        cat.set(new Animal("Abrikosik", 1, 1.11, "Red"));
+        System.out.println(cat.get());
 
-        CatEx.simpleInit(new Animal("Barsik", 3, 1.23, "Red"));
-        System.out.println();
-        //CatEx<Animal> cat = new CatEx<>();
-        //CatEx.startCat();
-        //System.out.println(cat.get());
+        CatEx.simpleInit(new Animal());
+
+        CatEx<Animal> cat2 = CatEx.init(new Animal());
+        cat2.set(new Animal( "Barsik", 2, 2.22, "Black"));
+        System.out.println(cat2.get());
         System.out.println("\n" + "----------");
     }
 }

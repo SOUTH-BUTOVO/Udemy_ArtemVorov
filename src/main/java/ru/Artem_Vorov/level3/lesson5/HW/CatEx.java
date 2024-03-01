@@ -4,7 +4,7 @@ public class CatEx<T> {
 
     private T instance;
 
-    private CatEx(){}
+    //private CatEx(){}
 
     static <T> void simpleInit(T instatiator) {}
 

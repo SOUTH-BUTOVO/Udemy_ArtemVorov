@@ -1,13 +1,13 @@
 package ru.Artem_Vorov.level3.lesson2;
 
-public class L3l2_User extends L3l2_BaseObject {
+public class User extends BaseObject {
     private String name;
     private int age;
 
-    public L3l2_User() {
+    public User() {
     }
 
-    public L3l2_User(String name, int age) {
+    public User(String name, int age) {
         this.name = name;
         this.age = age;
     }

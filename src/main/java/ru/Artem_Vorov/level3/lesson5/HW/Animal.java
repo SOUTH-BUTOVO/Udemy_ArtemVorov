@@ -12,6 +12,8 @@ public class Animal {
     private double weight;
     private String color;
 
+    public Animal() {}
+
     public Animal(String name, int age, double weight, String color) {
         this.name = name;
         this.age = age;

@@ -7,20 +7,20 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class L3l2_GenericBuilder<T> {
+public class GenericBuilder<T> {
     private final Supplier<T> inst;
 
     private List<Consumer<T>> instModifiers = new ArrayList<>();
 
-    public L3l2_GenericBuilder(Supplier<T> inst) {
+    public GenericBuilder(Supplier<T> inst) {
         this.inst = inst;
     }
 
-    public static <T> L3l2_GenericBuilder<T> of(Supplier<T> instatiator) {
-        return new L3l2_GenericBuilder<>(instatiator);
+    public static <T> GenericBuilder<T> of(Supplier<T> instatiator) {
+        return new GenericBuilder<>(instatiator);
     }
 
-    public <U> L3l2_GenericBuilder<T> with(BiConsumer<T, U> consumer, U value) {
+    public <U> GenericBuilder<T> with(BiConsumer<T, U> consumer, U value) {
         Consumer<T> c = instance -> {
             if (Optional.ofNullable(value).isEmpty()) {
                 return;
