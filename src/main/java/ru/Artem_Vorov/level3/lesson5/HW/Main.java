@@ -1,6 +1,9 @@
 package ru.Artem_Vorov.level3.lesson5.HW;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException, IOException {
@@ -76,6 +79,23 @@ public class Main {
         CatEx<Animal> cat2 = CatEx.init(new Animal());
         cat2.set(new Animal( "Barsik", 2, 2.22, "Black"));
         System.out.println(cat2.get());
+
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите данные кота, или ENTER для выхода:");
+        String strNewObj = reader.readLine();
+        String i = "0";
+        do {
+            for (int j = 0; ; j++) {
+
+
+                CatEx<Animal> catNew = new CatEx<>();
+                //catNew.set(Animal);
+                System.out.println(strNewObj);
+                strNewObj = reader.readLine();
+            }
+        } while (!strNewObj.equals(""));
+
         System.out.println("\n" + "----------");
     }
 }
