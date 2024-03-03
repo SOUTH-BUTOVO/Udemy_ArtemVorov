@@ -77,25 +77,27 @@ public class Main {
         CatEx.simpleInit(new Animal());
 
         CatEx<Animal> cat2 = CatEx.init(new Animal());
-        cat2.set(new Animal( "Barsik", 2, 2.22, "Black"));
+        cat2.set(new Animal("Barsik", 2, 2.22, "Black"));
         System.out.println(cat2.get());
 
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите данные кота, или ENTER для выхода:");
-        String strNewObj = reader.readLine();
-        String i = "0";
-        do {
-            for (int j = 0; ; j++) {
-
-
-                CatEx<Animal> catNew = new CatEx<>();
-                //catNew.set(Animal);
-                System.out.println(strNewObj);
-                strNewObj = reader.readLine();
+        for (int j = 0; ; j++) {
+            System.out.println("Введите имя кота, или ENTER для выхода:");
+            String newName = reader.readLine();
+            if (!newName.equals("")) {
+                CatEx<Animal> newCat = new CatEx<>();
+                System.out.println("Введите возраст кота:");
+                int newAge = Integer.parseInt(reader.readLine());
+                System.out.println("Введите вес кота:");
+                double newWeight = Double.parseDouble(reader.readLine());
+                System.out.println("Введите окрас кота:");
+                String newColor = reader.readLine();
+                newCat.set(new Animal(newName, newAge, newWeight, newColor));
+                System.out.println(newCat.get());
+                continue;
             }
-        } while (!strNewObj.equals(""));
-
-        System.out.println("\n" + "----------");
+            break;
+        }
     }
 }
