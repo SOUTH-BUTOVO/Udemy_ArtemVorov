@@ -1,7 +1,9 @@
 package ru.Artem_Vorov.level3.lesson6.HW;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         /* 1. Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter).
         Потом программа строит новый список. Если в строке чётное число букв, строка удваивается,
@@ -13,6 +15,8 @@ public class Main {
         Кот Кот Кот
         Коты Коты
         Я Я Я */
+        ListString listStr = new ListString();
+        listStr.str();
 
         /* 2. Ввести с клавиатуры 5 чисел и заполнить ими список. Вывести их в обратном порядке.
         Использовать только цикл for. */
