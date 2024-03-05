@@ -8,9 +8,9 @@ import java.util.List;
 
 public class ListString {
     void str() throws IOException {
-        List<String> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; ; i++) {
+            List<String> list = new ArrayList<>();
             System.out.println("Введите слово или ENTER для выхода из программы:");
             String newStr = reader.readLine();
             if (!newStr.equals("") && newStr.length() % 2 == 0) {
@@ -19,13 +19,14 @@ public class ListString {
                 list.add(newStr);
                 System.out.println(list);
                 continue;
-            } if (!newStr.equals("") && newStr.length() % 2 != 0) {
-                list.add(newStr + newStr + newStr);
+            }
+            if (!newStr.equals("") && newStr.length() % 2 != 0) {
+                list.add(newStr + " " + newStr + " " + newStr);
                 System.out.println(list);
                 continue;
             }
             System.out.println("Введена пустая строка, завершение программы.");
-        break;
+            break;
         }
 
     }
