@@ -13,9 +13,13 @@ public class ListStrEnd {
         for (int i = 0;  ; i++) {
             System.out.println("Введите строку для добавления в Лист или end, для выхода:");
             String str = reader.readLine();
-            if ((str.equals("end"))) break;
+            if ((str.equals("end"))) {
+                System.out.println("Введён END, завершение программы.");
+                break;
+            }
             list.add(str);
         }
         System.out.println(list);
+        for (String str : list) System.out.println(str);
     }
 }

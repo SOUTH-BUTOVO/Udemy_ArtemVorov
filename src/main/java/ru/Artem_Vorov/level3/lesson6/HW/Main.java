@@ -38,12 +38,16 @@ public class Main {
         строки, пока пользователь не введёт строку "end". "end" не учитывать. Вывести строки на экран,
         каждую с новой строки. */
         ListStrEnd strEnd = new ListStrEnd();
-        strEnd.listStrEnd();
+        //strEnd.listStrEnd();
 
         /* 6. Посчитать сколько прошло времени с начала сегодняшнего дня. Используйте класс Date.
         Посчитать сколько дней прошло с начала года. Используйте класс LocalDate. */
+        DateOfDay dateOfDay = new DateOfDay();
+        //dateOfDay.date();
 
         /* 7. Реверс числа. Ввести число с клавиатуры. Сделать реверс этого числа и вывести результат в консоль
         Пример: входные данные: -5544 результат: -4455 */
+        ListNumReverseTwo listNumReverseTwo = new ListNumReverseTwo();
+        listNumReverseTwo.numReverse();
     }
 }
