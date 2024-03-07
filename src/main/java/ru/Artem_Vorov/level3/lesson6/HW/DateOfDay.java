@@ -1,5 +1,8 @@
 package ru.Artem_Vorov.level3.lesson6.HW;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 public class DateOfDay {
@@ -9,7 +12,7 @@ public class DateOfDay {
 
         dateNew.setYear(124);
         dateNew.setMonth(2);
-        dateNew.setDate(6);
+        dateNew.setDate(7);
         dateNew.setHours(0);
         dateNew.setMinutes(0);
         dateNew.setSeconds(0);
@@ -35,5 +38,11 @@ public class DateOfDay {
         System.out.println(dateNew.getTime());
 
         System.out.println(dateNew);
+
+        LocalDate oldDate = LocalDate.of(2024, Month.JANUARY, 1);
+        LocalDate nowDate = LocalDate.now();
+        //oldDate.withYear(123);
+        System.out.println(ChronoUnit.DAYS.between(oldDate, nowDate) + " - Количество дней с начала 2024 года");
+
     }
 }

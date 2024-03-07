@@ -52,6 +52,7 @@ public class ListNumReverseTwo {
         if (num < 10 && num > -10) {
             System.out.println("Число " + num + " одноразрядное, его нет смысла переворачивать.");
         } else {
+            System.out.println("Введите число, меньше 0 или больше 10. И оно будет перевёрнуто:");
             int rev = 0;
             while (num != 0) {
                 rev = rev * 10 + num % 10;
