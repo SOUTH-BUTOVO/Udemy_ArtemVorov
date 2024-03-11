@@ -1,9 +1,13 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         /* 1. Ввести с клавиатуры число N. Считать N целых чисел и заполнить ими список - метод getIntegerList.
         Найти минимальное число среди элементов списка - метод getMinimum. */
+        ListNum listNum = new ListNum();
+        //listNum.getMinimum(listNum.getIntegerList());
 
         /* 2. Создай класс Human с полями имя (String), пол (boolean), возраст (int), дети (ArrayList<Human>).
         Создай объекты и заполни их так, чтобы получилось: два дедушки, две бабушки, отец, мать, трое детей.
@@ -11,6 +15,8 @@ public class Main {
         Имя: ded Ivan, пол: мужской, возраст: 70, дети: papa Fedya
         Имя: baba Masha, пол: женский, возраст: 65, дети: papa Fedya
         Имя: papa Fedya, пол: мужской, возраст: 40, дети: son Lesha, son Misha, daughter Masha */
+        Human human = new Human();
+        human.list.add(1, human);
 
         /* 3. Создать массив на 10 чисел. Заполнить его числами с клавиатуры. Вывести пять наибольших чисел. */
 
