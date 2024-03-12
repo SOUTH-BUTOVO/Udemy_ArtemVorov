@@ -1,6 +1,8 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -15,8 +17,41 @@ public class Main {
         Имя: ded Ivan, пол: мужской, возраст: 70, дети: papa Fedya
         Имя: baba Masha, пол: женский, возраст: 65, дети: papa Fedya
         Имя: papa Fedya, пол: мужской, возраст: 40, дети: son Lesha, son Misha, daughter Masha */
-        Human human = new Human();
-        human.list.add(1, human);
+        Human human = new Human("0", true, 1);
+        human.setName("Sergey");
+        //System.out.println(human);
+        //System.out.println("---");
+
+        Ded<Human> ded = new Ded<>();
+        ded.setInstance(new Human("Nikolay", true, 1));
+
+        Baba<Human> baba = new Baba<>();
+        baba.setInstance(new Human("Maria", false, 2));
+
+        Papa<Human> papa = new Papa<>();
+        papa.setInstance(new Human("Eduard", true, 3));
+
+        Mama<Human> mama = new Mama<>();
+        mama.setInstance(new Human("Vera", false, 4));
+
+        Children<Human> children1 = new Children<>();
+        children1.setInstance(new Human("Andrey", true, 5));
+
+        Children<Human> children12 = new Children<>();
+        children12.setInstance(new Human("Sergey", true, 6));
+
+        System.out.println(ded.getInstance());
+        System.out.println("---");
+        System.out.println(baba.getInstance());
+        System.out.println("---");
+        System.out.println(papa.getInstance());
+        System.out.println("---");
+        System.out.println(mama.getInstance());
+        System.out.println("---");
+        System.out.println(children12.getInstance());
+        System.out.println("---");
+        System.out.println(children1.getInstance());
+
 
         /* 3. Создать массив на 10 чисел. Заполнить его числами с клавиатуры. Вывести пять наибольших чисел. */
 

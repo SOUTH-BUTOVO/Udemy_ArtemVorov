@@ -1,13 +1,13 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
-public class Children<T> {
+public class Baba<T> {
     private T instance;
 
     public T getInstance() {
         return instance;
     }
 
-    public void setInstance(T obj) {
-        this.instance = obj;
+    public void setInstance(T instance) {
+        this.instance = instance;
     }
 }

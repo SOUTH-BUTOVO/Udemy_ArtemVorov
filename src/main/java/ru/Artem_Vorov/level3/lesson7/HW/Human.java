@@ -1,48 +1,68 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Human {
-    private System name;
+    private String name;
     private boolean gender;
     private int age;
+//    private ArrayList<Human> human;
 
     public Human() {
     }
 
-    public Human(System name, boolean gender, int age, List<Human> list) {
+    public Human(String name, boolean gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
-        this.list = list;
+//        human = new ArrayList<Human>();
     }
 
-    public System getName() {
-        return name;
+    public Human(String name, boolean gender, int age, String child) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+//        human = new ArrayList<Human>();
     }
 
-    public void setName(System name) {
+//    public String getName() {
+//        return name;
+//    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public boolean isGender() {
-        return gender;
+//    public boolean isGender() {
+//        return gender;
+//    }
+
+//    public void setGender(boolean gender) {
+//        this.gender = gender;
+//    }
+
+//    public int getAge() {
+//        return age;
+//    }
+
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
+
+//    public ArrayList<Human> getHuman() {
+//        return human;
+//    }
+
+//    public void setHuman(Human human) {
+        //this.human = human;
+//    }
+
+    @Override
+    public String toString() {
+        String gender;
+        if (this.gender) {
+            gender = "Мужской";
+        } else gender = "Женский";
+        return ("Моё имя " + name + ", пол " + gender + ", возраст " + age);
     }
-
-    public void setGender(boolean gender) {
-        this.gender = gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    List<Human> list = new ArrayList<Human>();
-
-    ArrayList<Human> children;
 }

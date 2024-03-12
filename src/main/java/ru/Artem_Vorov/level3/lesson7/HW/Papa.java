@@ -1,6 +1,6 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
-public class Children<T> {
+public class Papa<T> {
     private T instance;
 
     public T getInstance() {
