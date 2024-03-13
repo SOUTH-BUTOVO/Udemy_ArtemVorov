@@ -1,11 +1,10 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
-import java.util.ArrayList;
-
 public class Human {
     private String name;
     private boolean gender;
     private int age;
+    private String childName;
 //    private ArrayList<Human> human;
 
     public Human() {
@@ -22,12 +21,13 @@ public class Human {
         this.name = name;
         this.gender = gender;
         this.age = age;
+        this.childName = child;
 //        human = new ArrayList<Human>();
     }
 
-//    public String getName() {
-//        return name;
-//    }
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -49,6 +49,11 @@ public class Human {
 //        this.age = age;
 //    }
 
+    public void setChild(String child) {
+        this.childName = child;
+    }
+
+
 //    public ArrayList<Human> getHuman() {
 //        return human;
 //    }
@@ -63,6 +68,10 @@ public class Human {
         if (this.gender) {
             gender = "Мужской";
         } else gender = "Женский";
+        if (!(childName == null)) {
+            childName = "Ребёнок: " + gender + childName + "!";
+            return ("Моё имя " + name + ", пол " + gender + ", возраст " + age + " " + childName);
+        }
         return ("Моё имя " + name + ", пол " + gender + ", возраст " + age);
     }
 }

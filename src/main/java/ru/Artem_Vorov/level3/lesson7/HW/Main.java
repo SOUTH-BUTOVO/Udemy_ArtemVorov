@@ -22,6 +22,8 @@ public class Main {
         //System.out.println(human);
         //System.out.println("---");
 
+        //ArrayList
+
         Ded<Human> ded = new Ded<>();
         ded.setInstance(new Human("Nikolay", true, 1));
 
@@ -39,6 +41,8 @@ public class Main {
 
         Children<Human> children12 = new Children<>();
         children12.setInstance(new Human("Sergey", true, 6));
+
+        ded.setInstance(new Human("Nikolay", true, 1, papa.get));
 
         System.out.println(ded.getInstance());
         System.out.println("---");
