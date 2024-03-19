@@ -69,7 +69,7 @@ public class Human {
             gender = "Мужской";
         } else gender = "Женский";
         if (!(childName == null)) {
-            childName = "Ребёнок: " + gender + childName + "!";
+            childName = "Дети: " + gender + childName + "!";
             return ("Моё имя " + name + ", пол " + gender + ", возраст " + age + " " + childName);
         }
         return ("Моё имя " + name + ", пол " + gender + ", возраст " + age);

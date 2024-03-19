@@ -39,10 +39,14 @@ public class Main {
         Children<Human> children1 = new Children<>();
         children1.setInstance(new Human("Andrey", true, 5));
 
-        Children<Human> children12 = new Children<>();
-        children12.setInstance(new Human("Sergey", true, 6));
+        Children<Human> children2 = new Children<>();
+        children2.setInstance(new Human("Sergey", true, 6));
 
-        ded.setInstance(new Human("Nikolay", true, 1, papa.get));
+        Human human1 = new Human();
+        human1.setName(" Vanya");
+        System.out.println(human1.getName());
+
+        ded.setInstance(new Human("Nikolay", true, 1, human1.getName()));
 
         System.out.println(ded.getInstance());
         System.out.println("---");
@@ -52,12 +56,15 @@ public class Main {
         System.out.println("---");
         System.out.println(mama.getInstance());
         System.out.println("---");
-        System.out.println(children12.getInstance());
+        System.out.println(children2.getInstance());
         System.out.println("---");
         System.out.println(children1.getInstance());
+        System.out.println("-------------------" + "\n");
 
 
         /* 3. Создать массив на 10 чисел. Заполнить его числами с клавиатуры. Вывести пять наибольших чисел. */
+        MassTen massTen = new MassTen();
+        massTen.mass();
 
         /* 4. Ввести с клавиатуры 5 слов и выведи их в алфавитном порядке. */
 
