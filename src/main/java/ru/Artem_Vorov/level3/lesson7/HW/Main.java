@@ -1,8 +1,6 @@
 package ru.Artem_Vorov.level3.lesson7.HW;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -80,16 +78,24 @@ public class Main {
         ключ - значение
         ключ - значение */
         FourMap fourMap = new FourMap();
-        fourMap.strMap();
+        //fourMap.strMap();
         System.out.println("-------------------" + "\n");
 
         /* 6. Есть коллекция HashMap<String, String>, туда занесли 3 различные пары. При помощи метода
         printKeys: Вывести на экран список ключей, каждый элемент с новой строки. */
+        PrtKey prtKey = new PrtKey();
+        //prtKey.printKeys(prtKey.strMap());
+        System.out.println("-------------------" + "\n");
 
         /* 7. Есть коллекция HashMap<String, String>, туда занесли 3 различные пары. При помощи метода
         printValues: Вывести на экран список значений, каждый элемент с новой строки. */
+        PrtValue prtValue = new PrtValue();
+        //prtValue.printValues(prtValue.strMap());
+        System.out.println("-------------------" + "\n");
 
         /* Удалить все числа больше 10 Создать, множество чисел (Set<Integer>), занести туда 5 различных чисел.
         При помощи метода removeAllNumbersMoreThan10 удалить из множества все числа больше 10. */
+        DelSetNumTen delSetNumTen = new DelSetNumTen();
+        delSetNumTen.removeAllNumbersMoreThan10(delSetNumTen.setNum());
     }
 }

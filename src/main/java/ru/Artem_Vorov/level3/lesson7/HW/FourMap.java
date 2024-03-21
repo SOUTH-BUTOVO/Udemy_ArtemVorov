@@ -22,9 +22,31 @@ public class FourMap {
 
             map.put(key, value);
         }
-        for (String str : map) {
 
-        }
+//        for (String str : map) {
+//
+//        }
         System.out.println(map);
+        System.out.println(".....");
+
+        map.forEach((k, v) -> System.out.println(k + " : " + v));
+
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " | " + entry.getValue());
+        }
+
+        System.out.println(".....");
+        // 114 страница
+        int a = 1;
+        int b = 2;
+        int c;
+        int d;
+        c = ++b;
+        d = a++;
+        c++;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
     }
 }
