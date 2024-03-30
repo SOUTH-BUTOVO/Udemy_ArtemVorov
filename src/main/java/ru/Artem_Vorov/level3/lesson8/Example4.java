@@ -10,5 +10,9 @@ public class Example4 {
         Collections.addAll(list1, "Element1", "Element2", "Element3");
         Collections.sort(list1);
         List<String> list2 = Collections.synchronizedList(list1);
+        for (String s : list1) {
+            System.out.println(s);
+        }
+        System.out.println(list1);
     }
 }
