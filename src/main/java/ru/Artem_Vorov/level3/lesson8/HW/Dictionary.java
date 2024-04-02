@@ -10,7 +10,7 @@ package ru.Artem_Vorov.level3.lesson8.HW;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Dictionary1 {
+public class Dictionary {
     void dictionaryFamily() {
         String family = "Самойлович";
         String name = "Сергей";

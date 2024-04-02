@@ -21,7 +21,7 @@ public class Example1 {
         "Ширшов", "Сергей");
 
     void dictionary() {
-        Dictionary1 dictionary = new Dictionary1();
+        Dictionary dictionary = new Dictionary();
         dictionary.getCountTheSameFirstName(map, searchFamily);
         dictionary.getCountTheSameLastName(map, searchName);
     }
