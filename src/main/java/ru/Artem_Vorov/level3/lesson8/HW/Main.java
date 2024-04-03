@@ -41,7 +41,7 @@ public class Main {
         map.put("Gotze", "Mario");
         map.put("Gomez", "Mario"); */
         DictionaryRemoveName removeName = new DictionaryRemoveName();
-        //removeName.removeName(removeName.dictionary());
+        removeName.removeName(removeName.dictionary());
 
         /* 4 Программа вводит с клавиатуры имя месяца и выводит его номер на экран в виде:
         «May is 5 month».
@@ -58,6 +58,6 @@ public class Main {
         map.put("November",11);
         map.put("December",12); */
         MonthNumber mN = new MonthNumber();
-        mN.monthNumber(mN.month());
+        //mN.monthNumber(mN.month());
     }
 }
