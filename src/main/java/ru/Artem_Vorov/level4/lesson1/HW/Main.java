@@ -55,8 +55,8 @@ public class Main {
         Отсортировать пользователей с другими должностями, по параметру name и вывести содержимое коллекции в консоль. */
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Map<User, String> mapUser = new HashMap<>();
-        System.out.println("Заполните данные 5 сотрудников:");
-        for (int i = 0; i < 5; i++) {
+        System.out.println("Заполните данные 6 сотрудников:");
+        for (int i = 0; i < 6; i++) {
             System.out.println("Введите должность сотрудника:");
             String post = reader.readLine();
             System.out.println("Введите имя сотрудника:");
@@ -70,7 +70,7 @@ public class Main {
         }
 
         Comparator<User> comparatorSalary = new ComparatorSalary();
-        Set<User> set1 = new HashSet<>();
+        Set<User> set1 = new TreeSet<>(comparatorSalary);
         for (Map.Entry<User, String> entry : mapUser.entrySet()) {
             for (int i = 0; i < mapUser.size(); i++) {
                 if (entry.getValue().equalsIgnoreCase("boss")) {
@@ -80,7 +80,7 @@ public class Main {
         }
 
         Comparator<User> comparatorAge = new ComparatorAge();
-        Set<User> set2 = new HashSet<>();
+        Set<User> set2 = new TreeSet<>(comparatorAge);
         for (Map.Entry<User, String> entry : mapUser.entrySet()) {
             for (int i = 0; i < mapUser.size(); i++) {
                 if (entry.getValue().equalsIgnoreCase("worker")) {
@@ -89,7 +89,8 @@ public class Main {
             }
         }
 
-        Set<User> set3 = new HashSet<>();
+        Comparator<User> comparatorName = new ComparatorName();
+        Set<User> set3 = new TreeSet<>(comparatorName);
         for (Map.Entry<User, String> entry : mapUser.entrySet()) {
             for (int i = 0; i < mapUser.size(); i++) {
                 if (!(entry.getValue().equalsIgnoreCase("boss")) &&

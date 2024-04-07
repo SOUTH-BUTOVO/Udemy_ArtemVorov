@@ -34,6 +34,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "name=" + name + ", age=" + age;
+        return "Name=" + name + ", age=" + age+ ", salary=" + salary;
     }
 }
