@@ -2,8 +2,8 @@ package ru.Artem_Vorov.level5_Java_core.lesson1.HW;
 
 import java.util.Arrays;
 
-public class Binary {
-    int binarySearch(int[] mass, int valueToFind) {
+public class Binary2 {
+    int binarySearch2(int[] mass, int valueToFind) {
         Arrays.sort(mass);
         int left = 0;
         int right = mass.length - 1;
