@@ -15,23 +15,20 @@ public class IdenticalWords {
     void dictionaryWords() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] massWords = new String[5];
-        int[] massNum = new int[5];
+        int[] massNum = new int[massWords.length];
         Map<String, Integer> map = new TreeMap<>();
         System.out.println("Введите 5 слов.");
-
+        // Заполняем массив словами.
         for (int i = 0; i < massWords.length; i++) {
             String word = reader.readLine();
             massWords[i] = word;
         }
-
-        int num = 1;
-        for (int i = 0; i < massNum.length - 1; i++) {
-            massNum[i] = num;
-            if (massWords[i].equalsIgnoreCase(massWords[i + 1])) {
-                num += 1;
-            }
-
+        int count = 0;
+        for (String s : massWords) {
+            count++;
         }
+        System.out.println();
+
 
         System.out.println(Arrays.toString(massWords));
         System.out.println(Arrays.toString(massNum));
