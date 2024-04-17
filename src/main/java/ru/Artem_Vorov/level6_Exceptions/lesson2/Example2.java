@@ -16,6 +16,7 @@ public class Example2 {
         try {
             return Integer.parseInt(reader.readLine());
         } catch (NumberFormatException e) {
+            e.printStackTrace();
             //System.exit(404);
             return 0;
         } finally {
